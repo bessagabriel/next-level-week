@@ -1,4 +1,5 @@
 :root {
+    /* armazena os valores de cores em variaveis que podem ser utilizados durente o projeto */
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
@@ -27,7 +28,7 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* valor padrao é content-box, border-box fixa a largura da caixa e adapta o conteudo */
 }
 
 html,
@@ -36,7 +37,7 @@ body {
 }
 
 body {
-    background: var(--color-background);
+    background: var(--color-background); /* chamando o valor definido no root */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,13 +47,13 @@ input,
 button,
 textarea {
     /* font: 500 1.6rem Poppins; */
-    font weight: 500;
+    font-weight: 500;
     font-family: Poppins;
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* rem = unidade de medida refente ao valor padrao do root */
     color: var(--color-text-base);
 }
 
 #container {
-    width: 90vw; /* width = largura */
+    width: 90vw; /* view width (vw) = unidade de medida em relação à janela do browser */
     max-width: 700px;
 }
