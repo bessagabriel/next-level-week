@@ -57,3 +57,9 @@ textarea {
     width: 90vw; /* view width (vw) = unidade de medida em relação à janela do browser */
     max-width: 700px;
 }
+
+@media (min-width: 700px) { /* responsividade à dispositivos com telas acima de 700px */
+    :root {
+        font-size: 62.5%; /* todo 1rem vai ser relativo à 10 px */
+    }
+}
