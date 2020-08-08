@@ -87,38 +87,12 @@
                         </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset id="schedule-items">
                         <legend>
                             Horários Disponíveis
-                            <button id="add-time">+ Novo Horário</button>
+                            <button id="add-time" type="button">+ Novo Horário</button>
                         </legend>
 
-                        <div class="schedule-item">
-                            <div class="select-block">
-
-                                <label for="weekday">Dia da semana</label>
-                                <select name="weekday[]" id="weekday">
-                                    <option value="">Selecione uma opção</option>
-                                    <option value="0">Domingo</option>
-                                    <option value="1">Segunda-feira</option>
-                                    <option value="2">Terça-feira</option>
-                                    <option value="3">Quarta-feira</option>
-                                    <option value="4">Quinta-feira</option>
-                                    <option value="5">Sexta-feira</option>
-                                    <option value="6">Sábado</option>
-                                </select>
-                            </div>
-                                
-                            <div class="input-block">
-                                <label for="time_from">Das</label>
-                                <input type="time" id="time_from[]" required>
-                            </div>
-                                
-                            <div class="input-block">
-                                <label for="time_to">Até</label>
-                                <input type="time" id="time_to[]" required>
-                            </div>
-                        </div>
                         <div class="schedule-item">
                             <div class="select-block">
 
@@ -160,6 +134,6 @@
                 </footer>
             </main>
         </div>
-
     </body>
+    <script src="/scripts/addField.js"></script>
 </html>
